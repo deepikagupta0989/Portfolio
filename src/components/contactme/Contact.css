@@ -1,0 +1,78 @@
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    width: 100%;
+    max-width: 80%;
+}
+.contactDesc{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.contactPageTitle{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.name , .email, .msg{
+    width: 100%;
+    font-size: 20px;
+    font-family: "poppins";
+    max-width: 400px;
+    margin: 8px;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background : rgb(40, 40, 40);
+}
+.submitbtn{
+    background: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 3.5rem;
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+
+
+}
+.submitbtn:hover{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0,0,4,0.3);
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+@media screen and(max-width:500px) {
+   .contactForm{
+    width: 70%;
+    max-width: 70%;
+
+   }
+   .name , .email, .msg{
+    width: 80%;
+    max-width: 80%;
+   }
+    
+}
